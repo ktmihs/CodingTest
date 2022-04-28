@@ -1,0 +1,2 @@
+const arr1 = new Array(col).fill(0);
+const arr2 = [...Array(row)].map(e => Array(col).fill(0));
