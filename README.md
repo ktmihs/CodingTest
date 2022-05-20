@@ -2,7 +2,7 @@
 ✨ Practice coding test example
 
 ### boj (javascript - node.js)
-백준 코팅 테스트 연습
+#### 백준 코팅 테스트 연습
 
 👉 [이진탐색](https://github.com/ktmihs/CodingTest/tree/main/boj/binary_search) <br/> 
 👉 [DP](https://github.com/ktmihs/CodingTest/tree/main/boj/dp) <br/> 
@@ -12,7 +12,7 @@
 👉 [투포인터](https://github.com/ktmihs/CodingTest/tree/main/boj/two_pointer) <br/> 
 
 ### programmers (python3)
-프로그래머스 코딩 테스트 연습
+#### 프로그래머스 코딩 테스트 연습
 
 👉 [Kakao](https://github.com/ktmihs/CodingTest/tree/main/programmers/Kakao) <br/> 
 👉 [Summer-Winter](https://github.com/ktmihs/CodingTest/tree/main/programmers/Summer-Winter) <br/> 
