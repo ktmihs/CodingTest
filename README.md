@@ -9,7 +9,11 @@
 👉 [해시](https://github.com/ktmihs/CodingTest/tree/main/boj/hash) <br/> 
 👉 [스택](https://github.com/ktmihs/CodingTest/tree/main/boj/stack) <br/> 
 👉 [문자열](https://github.com/ktmihs/CodingTest/tree/main/boj/string) <br/> 
+👉 [DFS/BFS](https://github.com/ktmihs/CodingTest/tree/main/boj/DFS_BFS) <br/> 
 👉 [투포인터](https://github.com/ktmihs/CodingTest/tree/main/boj/two_pointer) <br/> 
+👉 [그리디](https://github.com/ktmihs/CodingTest/tree/main/boj/greedy) <br/> 
+👉 [트리](https://github.com/ktmihs/CodingTest/tree/main/boj/tree) <br/> 
+👉 [플로이드 워셜](https://github.com/ktmihs/CodingTest/tree/main/boj/floyd-warshall) <br/> 
 
 ### programmers (python3)
 #### 프로그래머스 코딩 테스트 연습
