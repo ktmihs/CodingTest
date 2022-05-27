@@ -1,7 +1,7 @@
 # Coding test example
 ✨ Practice coding test example
 
-### boj (javascript - node.js)c
+### boj (javascript - node.js)
 #### 백준 코팅 테스트 연습
 
 👉 [이진탐색](https://github.com/ktmihs/CodingTest/tree/main/boj/binary_search) <br/> 
