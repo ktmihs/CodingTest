@@ -1,0 +1,5 @@
+// 가희와 방어율 무시
+
+const [a, b] = require('fs').readFileSync('/dev/stdin').toString().trim().split("\n")[0].split(' ').map(Number);
+
+console.log(a - (a * b / 100) >= 100 ? 0 : 1);
