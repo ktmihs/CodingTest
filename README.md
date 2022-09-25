@@ -15,7 +15,7 @@
 👉 [트리](https://github.com/ktmihs/CodingTest/tree/main/boj/tree) <br/> 
 👉 [플로이드 워셜](https://github.com/ktmihs/CodingTest/tree/main/boj/floyd-warshall) <br/> 
 
-### programmers (python3 & js)
+### programmers (python)
 **프로그래머스 코딩 테스트 연습**
 
 👉 [Kakao](https://github.com/ktmihs/CodingTest/tree/main/programmers/Kakao) <br/> 
