@@ -1,0 +1,25 @@
+const KMP = (originString, keyword) => {
+  const len = keyword.length;
+  const pi = new Array(len + 1);
+  let answer = 0, i = -1, j = 0;
+  pi[j] = i;
+
+  while (j < len) {
+    if (i === -1 || keyword[i] == keyword[j]) pi[++j] = ++i;
+    else i = pi[i];
+  }
+
+  i = j = 0; 
+  while (i < originString.length) {
+    if (j === -1 || originString[i] === keyword[j]) {
+      i++;
+      j++;
+    } else j = pi[j];
+
+    if (j === len) {
+      answer = 1;
+      break;
+    }
+  }
+  return answer;
+}
