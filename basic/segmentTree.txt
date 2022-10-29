@@ -1,0 +1,33 @@
+const tree = new Array(n * 4).fill(0);
+
+// 구간합으로 초기화
+const init = (start, end, i) => {
+  if (start === end) {
+    tree[i] = +input[start];
+    return tree[i];
+  }
+  const mid = Math.floor((start + end) / 2);
+  tree[i] = init(start, mid, i * 2) + init(mid + 1, end, i * 2 + 1);
+  return tree[i];
+}
+init(0, n - 1, 1);
+
+// value만큼 더하기
+const update = (start, end, idx, item, value) => {
+  if (item < start || item > end) return;
+  tree[idx] += value;
+  if (start === end) return;
+  const mid = Math.floor((start + end) / 2);
+  update(start, mid, idx * 2, item, value);
+  update(mid + 1, end, idx * 2 + 1, item, value);
+}
+update(0, n-1, 1, item(변경할 번째 수), value(더해질 값));
+
+// left부터 right까지의 구간합 구하기
+const segment = (start, end, idx, left, right) => {
+  if (left > end || right < start) return 0;
+  if (left <=start && right >= end) return tree[idx];
+  const mid = Math.floor((start + end) / 2);
+  return segment(start, mid, idx * 2, left, right) + segment(mid + 1, end, idx * 2 + 1, left, right);
+}
+segment(0, n-1, 1, 5, 9);
