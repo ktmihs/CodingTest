@@ -1,0 +1,19 @@
+/* fs */
+const fs = require('fs');
+const filePath = process.platform === 'linux' ? '/dev/stdin' : './test.txt';
+const input = fs.readFileSync(filePath).toString().trim().split("\n");
+
+/* readline */
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+  input.push(line)
+}).on('close', function () {
+  // 원래 하던 것처럼 input 이용해서 문제 풀이하기
+});
