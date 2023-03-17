@@ -1,0 +1,25 @@
+const answer = [];
+
+input.forEach(palindrome => {
+  const func = (palindrome, flag) => {
+    let left = 0, right = palindrome.length - 1;
+    while (left <= right) {
+      if (palindrome[left] !== palindrome[right]) {
+        if (flag) return 2;
+        else {
+          if (!func(palindrome.slice(left + 1, right + 1), 1) || !func(palindrome.slice(left, right), 1)) return 1;
+          else return 2;
+        }
+      } else {
+        left++;
+        right--;
+      }
+    }
+    return 0;
+  }
+  answer.push(func(palindrome, 0));
+});
+
+// 0 => 팰린드롬
+// 1 => 1회 삭제로 팰린드롬 가능
+// 2 => 팰린드롬 불가

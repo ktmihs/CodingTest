@@ -1,0 +1,25 @@
+
+
+const 
+const queue=[];
+dist[s]=0;
+queue.push([s,0]);
+let L=0;
+
+while(queue.length){
+	const len=queue.length;
+	for(let i=0;i<len;i++){
+		const [now, nowCost] = queue.shift();
+		for(let [next, cost] of graph[now]){
+			if(nowCost+cost<dist[next]){
+				dist[next]=nowCost+cost;;
+				queue.push([next, dist[next]]);
+			}
+		}
+	}
+	L++;
+	if(L > k) break;
+}
+if(dist[e]===10e9) answer=-1;
+else answer=dist[e];
+return answer;

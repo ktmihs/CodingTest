@@ -1,0 +1,29 @@
+const Kruskal = (n, input) => {
+  input.sort((a, b) => a[2] - b[2]);	// 가중치로 정렬
+
+  const set = new Array(n + 1);
+  for (let i = 1; i <= n; i++) set[i] = i;	// 트리 만들기
+
+  const find = (set, x) => set[x] === x ? x : (set[x] = find(set, set[x]));
+  const union = (set, a, b) => {
+    a = find(set, a);
+    b = find(set, b);
+
+    a < b ? set[b] = a : set[a] = b;
+  }
+  const findParent = (set, a, b) => {
+    a = find(set, a);
+    b = find(set, b);
+
+    return a === b ? true : false;
+  }
+
+  let cost = 0;
+  for (let i = 0; i < input.length; i++) {
+    if (!findParent(set, input[i][0], input[i][1])) {
+      cost += input[i][2];	// 최소 비용 찾기
+      union(set, input[i][0], input[i][1]);
+    }
+  }
+  return cost;
+}
